@@ -1,0 +1,15 @@
+C:\DotNetProjects\StockThree\StockThree.Data\bin\Debug\StockThree.Data.dll.config
+C:\DotNetProjects\StockThree\StockThree.Data\bin\Debug\StockThree.Data.dll
+C:\DotNetProjects\StockThree\StockThree.Data\bin\Debug\StockThree.Data.pdb
+C:\DotNetProjects\StockThree\StockThree.Data\bin\Debug\EntityFramework.dll
+C:\DotNetProjects\StockThree\StockThree.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\DotNetProjects\StockThree\StockThree.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\DotNetProjects\StockThree\StockThree.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\DotNetProjects\StockThree\StockThree.Data\bin\Debug\EntityFramework.xml
+C:\DotNetProjects\StockThree\StockThree.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\DotNetProjects\StockThree\StockThree.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\DotNetProjects\StockThree\StockThree.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\DotNetProjects\StockThree\StockThree.Data\obj\Debug\StockThree.Data.csprojResolveAssemblyReference.cache
+C:\DotNetProjects\StockThree\StockThree.Data\obj\Debug\StockThree.Data.csproj.CoreCompileInputs.cache
+C:\DotNetProjects\StockThree\StockThree.Data\obj\Debug\StockThree.Data.dll
+C:\DotNetProjects\StockThree\StockThree.Data\obj\Debug\StockThree.Data.pdb
