@@ -69,3 +69,12 @@ C:\DotNetProjects\StockThree\StockThree.Web\obj\Debug\StockThree.Web.csprojResol
 C:\DotNetProjects\StockThree\StockThree.Web\obj\Debug\StockThree.Web.csproj.CoreCompileInputs.cache
 C:\DotNetProjects\StockThree\StockThree.Web\obj\Debug\StockThree.Web.dll
 C:\DotNetProjects\StockThree\StockThree.Web\obj\Debug\StockThree.Web.pdb
+C:\DotNetProjects\StockThree\StockThree.Web\bin\StockThree.Services.dll
+C:\DotNetProjects\StockThree\StockThree.Web\bin\StockThree.Services.pdb
+C:\DotNetProjects\StockThree\StockThree.Web\bin\StockThree.Services.dll.config
+C:\DotNetProjects\StockThree\StockThree.Web\bin\StockThree.Data.dll
+C:\DotNetProjects\StockThree\StockThree.Web\bin\StockThree.Models.dll
+C:\DotNetProjects\StockThree\StockThree.Web\bin\StockThree.Data.pdb
+C:\DotNetProjects\StockThree\StockThree.Web\bin\StockThree.Data.dll.config
+C:\DotNetProjects\StockThree\StockThree.Web\bin\StockThree.Models.pdb
+C:\DotNetProjects\StockThree\StockThree.Web\bin\StockThree.Models.dll.config
