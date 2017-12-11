@@ -5,9 +5,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using StcokThree.Web.Models;
+using StockThree.Web.Models;
 
-namespace StcokThree.Web
+namespace StockThree.Web
 {
     public partial class Startup
     {

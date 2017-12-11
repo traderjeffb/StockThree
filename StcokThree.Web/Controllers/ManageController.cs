@@ -6,9 +6,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using StcokThree.Web.Models;
+using StockThree.Web.Models;
 
-namespace StcokThree.Web.Controllers
+namespace StockThree.Web.Controllers
 {
     [Authorize]
     public class ManageController : Controller

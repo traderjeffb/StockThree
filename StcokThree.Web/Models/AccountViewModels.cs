@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace StcokThree.Web.Models
+namespace StockThree.Web.Models
 {
     public class ExternalLoginConfirmationViewModel
     {

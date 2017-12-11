@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace StcokThree.Web.Controllers
+namespace StockThree.Web.Controllers
 {
     public class HomeController : Controller
     {

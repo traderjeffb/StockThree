@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace StcokThree.Web
+namespace StockThree.Web
 {
     public class FilterConfig
     {

@@ -10,9 +10,10 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using StcokThree.Web.Models;
+using StockThree.Web.Models;
+using StockThree.Web.Models;
 
-namespace StcokThree.Web
+namespace StockThree.Web
 {
     public class EmailService : IIdentityMessageService
     {
