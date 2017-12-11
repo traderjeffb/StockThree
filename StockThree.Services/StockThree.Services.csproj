@@ -54,10 +54,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StockService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StockThree.Data\StockThree.Data.csproj">
+      <Project>{9da0036c-f61e-4d68-a689-0afc8e776f8e}</Project>
+      <Name>StockThree.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StockThree.Models\StockThree.Models.csproj">
+      <Project>{764b4a4e-b5ac-447c-9436-75263ffaf68f}</Project>
+      <Name>StockThree.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

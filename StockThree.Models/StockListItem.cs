@@ -12,6 +12,7 @@ namespace StockThree.Models
         public int TransactionId { get; set; }
         public string Ticker { get; set; }
         public int Shares { get; set; }
+        public float EntryPrice { get; set; }
 
         [Display(Name= "Created")]
         public DateTimeOffset CreatedUtc { get; set; }
