@@ -13,3 +13,5 @@ C:\DotNetProjects\StockThree\StockThree.Data\obj\Debug\StockThree.Data.csprojRes
 C:\DotNetProjects\StockThree\StockThree.Data\obj\Debug\StockThree.Data.csproj.CoreCompileInputs.cache
 C:\DotNetProjects\StockThree\StockThree.Data\obj\Debug\StockThree.Data.dll
 C:\DotNetProjects\StockThree\StockThree.Data\obj\Debug\StockThree.Data.pdb
+C:\DotNetProjects\StockThree\StockThree.Data\obj\Debug\StockThree.Data.Migrations.Stock.resources
+C:\DotNetProjects\StockThree\StockThree.Data\obj\Debug\StockThree.Data.csproj.GenerateResource.Cache

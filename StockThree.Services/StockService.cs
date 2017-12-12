@@ -23,7 +23,9 @@ namespace StockThree.Services
 
         public bool CreateStock(StockCreate model)
         {
-            var entity =
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
                 new Stock()
                 {
                     OwnerId = _userId,
@@ -33,9 +35,8 @@ namespace StockThree.Services
                     CreatedUtc = DateTimeOffset.Now
                 };
 
-            using (var ctx = new ApplicationDbContext())
-            {
-                ctx.Stocks.Add(entitiy);
+
+                ctx.Stocks.Add(entity);
                 return ctx.SaveChanges() == 1;
             }
 
@@ -47,7 +48,6 @@ namespace StockThree.Services
             {
                 var query =
                     ctx
-
                         .Stocks
                         .Where(e => e.OwnerId == _userId)
                         .Select(
@@ -60,8 +60,6 @@ namespace StockThree.Services
                                     EntryPrice = e.EntryPrice,
                                     CreatedUtc = e.CreatedUtc
                                 }
-
-
                         );
                 return query.ToArray();
             }

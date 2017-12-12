@@ -24,27 +24,47 @@ namespace StockThree.Web.Controllers
         }
 
         public ActionResult Create()
-        {
-            return View();
+        { 
+            var model = new StockCreate();
+            return View(model);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(StockCreate model)
         {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
+
+            if (!ModelState.IsValid) return View(model);
             
+
+
+            var service = CreateStockService();
+
+            if (service.CreateStock(model))
+            {
+                ViewBag.SaveResult = "Your stock was created.";
+                return RedirectToAction("Index");
+            }
+            ;  //<<<---------------------------------*needs a semi-colon  #7 num 10.
+            
+            ModelState.AddModelError("","Stock could not be created.");
+            
+            return View(model);
 
         }
 
-        var userId = Guid.Parse(User.Identity.GetUserId());
-        var service = new StockService(userId);
-        service.CreateStocks();
+        private StockService CreateStockService()
+        {
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new StockService(userId);
+            return service;
+        }
 
-            return RedirectToAction("Index");
-
+        private StockService StockService()
+        {
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new StockService(userId);
+            return service;
+        }
     }
 }
