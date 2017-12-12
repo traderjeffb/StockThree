@@ -63,6 +63,48 @@ namespace StockThree.Web.Controllers
             return View(model);
         }
 
+        //Remember that lc id is important because of the route.
+        public ActionResult Edit(int id)
+        {
+            var service = CreateStockService();
+            var detail = service.GetStockById(id);
+            var model =
+                new StockEdit
+                {
+                    TransactionId = detail.TransactionId,
+                    Ticker = detail.Ticker,
+                    Shares = detail.Shares
+                };
+
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, StockEdit model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            if(model.TransactionId != id)
+            {
+                ModelState.AddModelError("","ID Mismatch");
+                return View(model);
+            }
+            var service = CreateStockService();
+
+            if (service.UpdateStock(model))
+            {
+                TempData["SaveResult"] = "Your Stock was updated";
+                return RedirectToAction("Index");
+            }
+            ModelState.AddModelError("","Your Stock could not be Updated.");
+            return View(model);
+        }
+
+
+
+
         private StockService CreateStockService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());

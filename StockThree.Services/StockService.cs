@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Core.Objects.DataClasses;
 using System.Linq;
 using System.Net.Sockets;
 using System.Reflection;
@@ -90,6 +91,24 @@ namespace StockThree.Services
             }
         }
 
+        public bool UpdateStock(StockEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                    .Stocks
+                    .Single(e => e.TransactionId == model.TransactionId && e.OwnerId == _userId);
+
+                entity.Ticker = model.Ticker;
+                entity.Shares = model.Shares;
+                entity.ModifiedUtc = DateTimeOffset.UtcNow;
+                //rememeber how this tells us how many rows are updated
+                return ctx.SaveChanges() == 1;
+            }
+            
+
+        }
 
     }
 
