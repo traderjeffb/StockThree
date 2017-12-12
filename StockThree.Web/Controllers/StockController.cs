@@ -42,7 +42,9 @@ namespace StockThree.Web.Controllers
 
             if (service.CreateStock(model))
             {
-                ViewBag.SaveResult = "Your stock was created.";
+                //Using TempData to store data in the session.
+                //When you tead data from there, it removes it from the session.
+                TempData["SaveResult"] = "Your stock was created.";
                 return RedirectToAction("Index");
             }
             ;  //<<<---------------------------------*needs a semi-colon  #7 num 10.
