@@ -55,6 +55,14 @@ namespace StockThree.Web.Controllers
 
         }
 
+        public ActionResult Details(int id)
+        {
+            var service = CreateStockService();
+            var model = service.GetStockById(id);
+
+            return View(model);
+        }
+
         private StockService CreateStockService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());

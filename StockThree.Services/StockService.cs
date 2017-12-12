@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +23,7 @@ namespace StockThree.Services
         }
 
         public bool CreateStock(StockCreate model)
+            
         {
             using (var ctx = new ApplicationDbContext())
             {
@@ -65,6 +67,27 @@ namespace StockThree.Services
             }
 
 
+        }
+
+        public StockDetail GetStockById(int transactionId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Stocks
+                        .Single(e => e.TransactionId == transactionId);
+                return  
+                    new StockDetail
+                {
+                    TransactionId = entity.TransactionId,
+                    Ticker = entity.Ticker,
+                    Shares = entity.Shares,
+                    EntryPrice = entity.EntryPrice,
+                    CreatedUtc = entity.CreatedUtc,
+                    ModifiedUtc = entity.ModifiedUtc
+                };
+            }
         }
 
 
