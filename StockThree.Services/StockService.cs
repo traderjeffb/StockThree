@@ -97,8 +97,8 @@ namespace StockThree.Services
             {
                 var entity =
                     ctx
-                    .Stocks
-                    .Single(e => e.TransactionId == model.TransactionId && e.OwnerId == _userId);
+                        .Stocks
+                        .Single(e => e.TransactionId == model.TransactionId && e.OwnerId == _userId);
 
                 entity.Ticker = model.Ticker;
                 entity.Shares = model.Shares;
@@ -106,9 +106,21 @@ namespace StockThree.Services
                 //rememeber how this tells us how many rows are updated
                 return ctx.SaveChanges() == 1;
             }
-            
-
         }
+
+        public bool DeleteStock(int TransactionId)
+            {
+                using (var ctx = new ApplicationDbContext())
+                {
+                    var entity =
+                        ctx
+                            .Stocks
+                            .Single(e => e.TransactionId == TransactionId && e.OwnerId == _userId);
+
+                    ctx.Stocks.Remove(entity);
+                    return ctx.SaveChanges() == 1;
+                }
+            }
 
     }
 

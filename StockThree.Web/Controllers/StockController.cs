@@ -102,8 +102,23 @@ namespace StockThree.Web.Controllers
             return View(model);
         }
 
+        [ActionName("Delete")]
+        public ActionResult Delete(int id)
+        {
+            var service = CreateStockService();
+            var model = service.GetStockById(id);
+            return View(model);
+        }
 
-
+        [HttpPost]
+        [ActionName("Delete")]
+        public ActionResult DeletePost(int id)
+        {
+            var service = CreateStockService();
+            service.DeleteStock(id);
+            TempData["SaveResult"] = "Your Stock was deleted";
+            return RedirectToAction("Index");
+        }
 
         private StockService CreateStockService()
         {
