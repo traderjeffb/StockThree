@@ -229,6 +229,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\StockThreeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -282,7 +283,9 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -317,6 +320,14 @@
     <ProjectReference Include="..\StockThree.Data\StockThree.Data.csproj">
       <Project>{9da0036c-f61e-4d68-a689-0afc8e776f8e}</Project>
       <Name>StockThree.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StockThree.Models\StockThree.Models.csproj">
+      <Project>{764b4a4e-b5ac-447c-9436-75263ffaf68f}</Project>
+      <Name>StockThree.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StockThree.Services\StockThree.Services.csproj">
+      <Project>{43667d96-afd7-46cd-a8ea-3eab161c96bb}</Project>
+      <Name>StockThree.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

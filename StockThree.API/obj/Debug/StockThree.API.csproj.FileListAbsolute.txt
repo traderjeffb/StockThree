@@ -80,3 +80,9 @@ C:\DotNetProjects\StockThree\StockThree.API\obj\Debug\StockThree.API.csprojResol
 C:\DotNetProjects\StockThree\StockThree.API\obj\Debug\StockThree.API.csproj.CoreCompileInputs.cache
 C:\DotNetProjects\StockThree\StockThree.API\obj\Debug\StockThree.API.dll
 C:\DotNetProjects\StockThree\StockThree.API\obj\Debug\StockThree.API.pdb
+C:\DotNetProjects\StockThree\StockThree.API\bin\StockThree.Models.dll
+C:\DotNetProjects\StockThree\StockThree.API\bin\StockThree.Services.dll
+C:\DotNetProjects\StockThree\StockThree.API\bin\StockThree.Models.pdb
+C:\DotNetProjects\StockThree\StockThree.API\bin\StockThree.Models.dll.config
+C:\DotNetProjects\StockThree\StockThree.API\bin\StockThree.Services.pdb
+C:\DotNetProjects\StockThree\StockThree.API\bin\StockThree.Services.dll.config

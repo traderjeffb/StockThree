@@ -54,9 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\201712121823483_Stock.cs" />
-    <Compile Include="Migrations\201712121823483_Stock.Designer.cs">
-      <DependentUpon>201712121823483_Stock.cs</DependentUpon>
+    <Compile Include="Migrations\201712132019042_StockData.cs" />
+    <Compile Include="Migrations\201712132019042_StockData.Designer.cs">
+      <DependentUpon>201712132019042_StockData.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,8 +67,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201712121823483_Stock.resx">
-      <DependentUpon>201712121823483_Stock.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712132019042_StockData.resx">
+      <DependentUpon>201712132019042_StockData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
