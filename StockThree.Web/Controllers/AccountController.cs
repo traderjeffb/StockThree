@@ -12,6 +12,12 @@ using StockThree.Web.Models;
 
 namespace StockThree.Web.Controllers
 {
+
+    // Adding SSL to app
+#if !DEBUG
+    [RequireHttps]
+
+#endif
     [Authorize]
     public class AccountController : Controller
     {
@@ -423,7 +429,7 @@ namespace StockThree.Web.Controllers
             base.Dispose(disposing);
         }
 
-        #region Helpers
+#region Helpers
         // Used for XSRF protection when adding external logins
         private const string XsrfKey = "XsrfId";
 
@@ -480,6 +486,6 @@ namespace StockThree.Web.Controllers
                 context.HttpContext.GetOwinContext().Authentication.Challenge(properties, LoginProvider);
             }
         }
-        #endregion
+#endregion
     }
 }

@@ -132,6 +132,6 @@ namespace StockThree.Web.Controllers
             var userId = Guid.Parse(User.Identity.GetUserId());
             var service = new StockService(userId);
             return service;
-        }
+        }// ******
     }
 }

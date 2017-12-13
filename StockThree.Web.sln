@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockThree.Data", "StockThr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockThree.Web", "StockThree.Web\StockThree.Web.csproj", "{7810BE75-1EDD-4383-8D71-AF69F23B7E00}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockThree.API", "StockThree.API\StockThree.API.csproj", "{38792FC0-B0FC-4B13-BC4D-768FBC7221E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{7810BE75-1EDD-4383-8D71-AF69F23B7E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7810BE75-1EDD-4383-8D71-AF69F23B7E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7810BE75-1EDD-4383-8D71-AF69F23B7E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38792FC0-B0FC-4B13-BC4D-768FBC7221E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38792FC0-B0FC-4B13-BC4D-768FBC7221E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38792FC0-B0FC-4B13-BC4D-768FBC7221E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38792FC0-B0FC-4B13-BC4D-768FBC7221E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
