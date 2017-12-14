@@ -10,7 +10,8 @@ using StockThree.Models;
 using StockThree.Services;
 
 namespace StockThree.API.Controllers
-{   [Authorize]
+{
+    [Authorize]
     public class StockThreeController : ApiController
     {
         //Get api/stock
