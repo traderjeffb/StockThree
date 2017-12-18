@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockThree.API", "StockThre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockThree.Web.Tests", "StockThree.Web.Tests\StockThree.Web.Tests.csproj", "{892F1146-87B7-4CDE-B364-87C2751D3F4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockContracts", "StockContracts\StockContracts.csproj", "{D00DA0E1-4561-4FDC-8970-3A3B776A58E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockContracts", "StockContracts\StockContracts.csproj", "{F14AF07D-7B5F-4369-A504-B4A59A5CAC5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +47,10 @@ Global
 		{892F1146-87B7-4CDE-B364-87C2751D3F4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{892F1146-87B7-4CDE-B364-87C2751D3F4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{892F1146-87B7-4CDE-B364-87C2751D3F4E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D00DA0E1-4561-4FDC-8970-3A3B776A58E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D00DA0E1-4561-4FDC-8970-3A3B776A58E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D00DA0E1-4561-4FDC-8970-3A3B776A58E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D00DA0E1-4561-4FDC-8970-3A3B776A58E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F14AF07D-7B5F-4369-A504-B4A59A5CAC5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F14AF07D-7B5F-4369-A504-B4A59A5CAC5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F14AF07D-7B5F-4369-A504-B4A59A5CAC5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F14AF07D-7B5F-4369-A504-B4A59A5CAC5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

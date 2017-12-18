@@ -1,0 +1,9 @@
+C:\DotNetProjects\StockThree\StockContracts\bin\Debug\StockContracts.dll
+C:\DotNetProjects\StockThree\StockContracts\bin\Debug\StockContracts.pdb
+C:\DotNetProjects\StockThree\StockContracts\bin\Debug\StockThree.Models.dll
+C:\DotNetProjects\StockThree\StockContracts\bin\Debug\StockThree.Models.pdb
+C:\DotNetProjects\StockThree\StockContracts\bin\Debug\StockThree.Models.dll.config
+C:\DotNetProjects\StockThree\StockContracts\obj\Debug\StockContracts.csprojResolveAssemblyReference.cache
+C:\DotNetProjects\StockThree\StockContracts\obj\Debug\StockContracts.csproj.CoreCompileInputs.cache
+C:\DotNetProjects\StockThree\StockContracts\obj\Debug\StockContracts.dll
+C:\DotNetProjects\StockThree\StockContracts\obj\Debug\StockContracts.pdb

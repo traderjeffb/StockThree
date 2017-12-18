@@ -88,3 +88,5 @@ C:\DotNetProjects\StockThree\StockThree.API\bin\StockThree.Services.pdb
 C:\DotNetProjects\StockThree\StockThree.API\bin\StockThree.Services.dll.config
 C:\DotNetProjects\StockThree\StockThree.API\bin\Swashbuckle.Core.dll
 C:\DotNetProjects\StockThree\StockThree.API\bin\WebActivatorEx.dll
+C:\DotNetProjects\StockThree\StockThree.API\bin\StockContracts.dll
+C:\DotNetProjects\StockThree\StockThree.API\bin\StockContracts.pdb

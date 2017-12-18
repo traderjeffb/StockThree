@@ -14,7 +14,7 @@ using StockThree.Web.Models;
 
 namespace StockThree.Services
 {
-    public class StockService : IStockService
+    public class StockService : IStock
 
     {
 

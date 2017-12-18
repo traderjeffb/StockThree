@@ -21,7 +21,7 @@ namespace StockThree.Web.Tests.Controllers.StockControllerTests
             Service = new FakeStockService();
 
             Controller = new StockController(
-                new Lazy<IStockService>(()=> Service));
+                new Lazy<IStock>(()=> Service));
         }
     }
 }

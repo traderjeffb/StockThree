@@ -78,3 +78,5 @@ C:\DotNetProjects\StockThree\StockThree.Web\bin\StockThree.Data.pdb
 C:\DotNetProjects\StockThree\StockThree.Web\bin\StockThree.Data.dll.config
 C:\DotNetProjects\StockThree\StockThree.Web\bin\StockThree.Models.pdb
 C:\DotNetProjects\StockThree\StockThree.Web\bin\StockThree.Models.dll.config
+C:\DotNetProjects\StockThree\StockThree.Web\bin\StockContracts.dll
+C:\DotNetProjects\StockThree\StockThree.Web\bin\StockContracts.pdb

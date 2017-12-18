@@ -57,3 +57,5 @@ C:\DotNetProjects\StockThree\StockThree.Web.Tests\obj\Debug\StockThree.Web.Tests
 C:\DotNetProjects\StockThree\StockThree.Web.Tests\obj\Debug\StockThree.Web.Tests.csproj.CoreCompileInputs.cache
 C:\DotNetProjects\StockThree\StockThree.Web.Tests\obj\Debug\StockThree.Web.Tests.dll
 C:\DotNetProjects\StockThree\StockThree.Web.Tests\obj\Debug\StockThree.Web.Tests.pdb
+C:\DotNetProjects\StockThree\StockThree.Web.Tests\bin\Debug\StockContracts.dll
+C:\DotNetProjects\StockThree\StockThree.Web.Tests\bin\Debug\StockContracts.pdb

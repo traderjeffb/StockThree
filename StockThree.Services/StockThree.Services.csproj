@@ -62,7 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\StockContracts\StockContracts.csproj">
-      <Project>{D00DA0E1-4561-4FDC-8970-3A3B776A58E2}</Project>
+      <Project>{F14AF07D-7B5F-4369-A504-B4A59A5CAC5B}</Project>
       <Name>StockContracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\StockThree.Data\StockThree.Data.csproj">

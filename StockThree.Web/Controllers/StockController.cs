@@ -5,7 +5,6 @@ using System.Web;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using StockContracts;
-//using StockContracts;
 using StockThree.Models;
 using StockThree.Services;
 
@@ -15,7 +14,7 @@ namespace StockThree.Web.Controllers
     public class StockController : Controller
     {
         private readonly Lazy<StockService> _stockService;
-        private Lazy<IStockService> lazy;
+        private Lazy<IStock> lazy;
 
         public StockController()
         {
@@ -28,7 +27,7 @@ namespace StockThree.Web.Controllers
             _stockService = stockService;
         }
 
-        public StockController(Lazy<IStockService> lazy)
+        public StockController(Lazy<IStock> lazy)
         {
             this.lazy = lazy;
         }

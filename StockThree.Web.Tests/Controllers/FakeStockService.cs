@@ -7,11 +7,13 @@ using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using StockContracts;
 using StockThree.Models;
+using StockThree.Services;
+
 
 namespace StockThree.Web.Tests.Controllers
 {
 
-    public class FakeStockService : IStockService
+    public class FakeStockService : IStock
     {
 
         public int CreateStockCallCount { get; private set; }
@@ -22,6 +24,11 @@ namespace StockThree.Web.Tests.Controllers
             CreateStockCallCount++;
 
             return CreateStockReturnValue;
+        }
+
+        public IEnumerable<StockListItem> GetStocks()
+        {
+            throw new NotImplementedException();
         }
 
         public bool DeleteStock(int stockId)
