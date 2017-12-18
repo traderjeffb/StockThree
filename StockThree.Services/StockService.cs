@@ -7,13 +7,15 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using StockContracts;
 using StockThree.Data;
 using StockThree.Models;
 using StockThree.Web.Models;
 
 namespace StockThree.Services
 {
-    public class StockService
+    public class StockService : IStockService
+
     {
 
         private readonly Guid _userId;

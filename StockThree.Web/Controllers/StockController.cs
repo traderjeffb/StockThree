@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
+using StockContracts;
+//using StockContracts;
 using StockThree.Models;
 using StockThree.Services;
 
@@ -12,6 +14,26 @@ namespace StockThree.Web.Controllers
     [Authorize]
     public class StockController : Controller
     {
+        private readonly Lazy<StockService> _stockService;
+        private Lazy<IStockService> lazy;
+
+        public StockController()
+        {
+            _stockService = new Lazy<StockService>(() =>
+            new StockService(Guid.Parse(User.Identity.GetUserId())));
+        }
+
+        public StockController(Lazy<StockService> stockService)
+        {
+            _stockService = stockService;
+        }
+
+        public StockController(Lazy<IStockService> lazy)
+        {
+            this.lazy = lazy;
+        }
+
+
         // GET: Stock
         public ActionResult Index()
         {
@@ -37,10 +59,7 @@ namespace StockThree.Web.Controllers
             if (!ModelState.IsValid) return View(model);
             
 
-
-            var service = CreateStockService();
-
-            if (service.CreateStock(model))
+            if (_stockService.Value.CreateStock(model))
             {
                 //Using TempData to store data in the session.
                 //When you tead data from there, it removes it from the session.
@@ -52,13 +71,11 @@ namespace StockThree.Web.Controllers
             ModelState.AddModelError("","Stock could not be created.");
             
             return View(model);
-
         }
 
         public ActionResult Details(int id)
         {
-            var service = CreateStockService();
-            var model = service.GetStockById(id);
+            var model = _stockService.Value.GetStockById(id);
 
             return View(model);
         }
@@ -66,8 +83,12 @@ namespace StockThree.Web.Controllers
         //Remember that lc id is important because of the route.
         public ActionResult Edit(int id)
         {
-            var service = CreateStockService();
+  //          var service = CreateStockService();
+  //          var detail = _stockService.Value.GetStockById(id);
+            var service = _stockService.Value;
             var detail = service.GetStockById(id);
+            
+
             var model =
                 new StockEdit
                 {
@@ -91,9 +112,9 @@ namespace StockThree.Web.Controllers
                 ModelState.AddModelError("","ID Mismatch");
                 return View(model);
             }
-            var service = CreateStockService();
 
-            if (service.UpdateStock(model))
+
+            if (_stockService.Value.UpdateStock(model))
             {
                 TempData["SaveResult"] = "Your Stock was updated";
                 return RedirectToAction("Index");
@@ -105,8 +126,8 @@ namespace StockThree.Web.Controllers
         [ActionName("Delete")]
         public ActionResult Delete(int id)
         {
-            var service = CreateStockService();
-            var model = service.GetStockById(id);
+
+            var model = _stockService.Value.GetStockById(id);
             return View(model);
         }
 
@@ -114,18 +135,13 @@ namespace StockThree.Web.Controllers
         [ActionName("Delete")]
         public ActionResult DeletePost(int id)
         {
-            var service = CreateStockService();
-            service.DeleteStock(id);
+
+            _stockService.Value.DeleteStock(id);
             TempData["SaveResult"] = "Your Stock was deleted";
             return RedirectToAction("Index");
         }
 
-        private StockService CreateStockService()
-        {
-            var userId = Guid.Parse(User.Identity.GetUserId());
-            var service = new StockService(userId);
-            return service;
-        }
+
 
         private StockService StockService()
         {

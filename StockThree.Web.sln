@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockThree.Web", "StockThre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockThree.API", "StockThree.API\StockThree.API.csproj", "{38792FC0-B0FC-4B13-BC4D-768FBC7221E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockThree.Web.Tests", "StockThree.Web.Tests\StockThree.Web.Tests.csproj", "{892F1146-87B7-4CDE-B364-87C2751D3F4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockContracts", "StockContracts\StockContracts.csproj", "{D00DA0E1-4561-4FDC-8970-3A3B776A58E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{38792FC0-B0FC-4B13-BC4D-768FBC7221E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38792FC0-B0FC-4B13-BC4D-768FBC7221E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38792FC0-B0FC-4B13-BC4D-768FBC7221E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{892F1146-87B7-4CDE-B364-87C2751D3F4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{892F1146-87B7-4CDE-B364-87C2751D3F4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{892F1146-87B7-4CDE-B364-87C2751D3F4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{892F1146-87B7-4CDE-B364-87C2751D3F4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D00DA0E1-4561-4FDC-8970-3A3B776A58E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D00DA0E1-4561-4FDC-8970-3A3B776A58E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D00DA0E1-4561-4FDC-8970-3A3B776A58E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D00DA0E1-4561-4FDC-8970-3A3B776A58E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
