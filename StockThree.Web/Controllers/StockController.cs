@@ -13,33 +13,45 @@ namespace StockThree.Web.Controllers
     [Authorize]
     public class StockController : Controller
     {
-        private readonly Lazy<StockService> _stockService;
-        private Lazy<IStock> lazy;
+        private readonly Lazy<IStock> _stockService;
 
         public StockController()
         {
-            _stockService = new Lazy<StockService>(() =>
-            new StockService(Guid.Parse(User.Identity.GetUserId())));
+            _stockService = new Lazy<IStock>(CreateStockService);
         }
 
-        public StockController(Lazy<StockService> stockService)
+        public StockController(Lazy<IStock> stockSevice)
         {
-            _stockService = stockService;
+            _stockService  = stockSevice;
         }
 
-        public StockController(Lazy<IStock> lazy)
-        {
-            this.lazy = lazy;
-        }
+
+
+  //      private Lazy<IStock> lazy;
+
+        //public StockController()
+        //{
+        //    _stockService = new Lazy<StockService>(() =>
+        //    new StockService(Guid.Parse(User.Identity.GetUserId())));
+        //}
+
+        //public StockController(Lazy<StockService> stockService)
+        //{
+        //    _stockService = stockService;
+        //}
+
+        //public StockController(Lazy<IStock> lazy)
+        //{
+        //    this.lazy = lazy;
+        //}
 
 
         // GET: Stock
         public ActionResult Index()
         {
 
-            var userId = Guid.Parse(User.Identity.GetUserId());
-            var service = new StockService(userId);
-            var model = service.GetStocks();
+
+            var model = _stockService.Value.GetStocks();
 
             return View(model);
         }
@@ -84,8 +96,7 @@ namespace StockThree.Web.Controllers
         {
   //          var service = CreateStockService();
   //          var detail = _stockService.Value.GetStockById(id);
-            var service = _stockService.Value;
-            var detail = service.GetStockById(id);
+            var detail = _stockService.Value.GetStockById(id);
             
 
             var model =
@@ -142,7 +153,7 @@ namespace StockThree.Web.Controllers
 
 
 
-        private StockService StockService()
+        private StockService CreateStockService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
             var service = new StockService(userId);

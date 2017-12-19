@@ -6,12 +6,24 @@ using System.Threading.Tasks;
 using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using StockThree.Models;
+using StockThree.Web.Tests.Controllers.StockControllerTests;
 
 namespace StockThree.Web.Tests.Controllers.StockControllerTests
 {
+
     [TestClass]
     public class CreatePost : StockControllerTestsBase
     {
+        
+        //private ReviewCreate _model;
+
+        //private ActionResult Act()
+        //{
+        //    return Controller.Create(_model);
+        //}
+
+
+
         [TestMethod]
         public void ShouldReturnRedirectToResult()
         {

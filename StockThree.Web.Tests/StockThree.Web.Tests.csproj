@@ -69,7 +69,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\FakeStockService.cs" />
+    <Compile Include="Controllers\StockControllerTests\FakeStockService.cs" />
     <Compile Include="Controllers\StockControllerTests\CreatePost.cs" />
     <Compile Include="Controllers\StockControllerTests\StockControllerTestsBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

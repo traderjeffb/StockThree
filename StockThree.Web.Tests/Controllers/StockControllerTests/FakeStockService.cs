@@ -10,14 +10,15 @@ using StockThree.Models;
 using StockThree.Services;
 
 
-namespace StockThree.Web.Tests.Controllers
+namespace StockThree.Web.Tests.Controllers.Review.ControllerTests
+
 {
 
     public class FakeStockService : IStock
     {
 
         public int CreateStockCallCount { get; private set; }
-        public bool CreateStockReturnValue { private get; set; }
+        public bool CreateStockReturnValue { private get; set; } = true;
 
         public bool CreateStock(StockCreate model)
         {

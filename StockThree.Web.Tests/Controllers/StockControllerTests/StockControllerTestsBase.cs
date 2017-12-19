@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using StockContracts;
 using StockThree.Web.Controllers;
+using StockThree.Web.Tests.Controllers.Review.ControllerTests;
 
 namespace StockThree.Web.Tests.Controllers.StockControllerTests
 {
@@ -15,7 +16,7 @@ namespace StockThree.Web.Tests.Controllers.StockControllerTests
         protected StockController Controller;
         protected FakeStockService Service;
 
-    [TestInitialize]
+        [TestInitialize]
         public virtual void Arrange()
         {
             Service = new FakeStockService();
