@@ -25,27 +25,6 @@ namespace StockThree.Web.Controllers
             _stockService  = stockSevice;
         }
 
-
-
-  //      private Lazy<IStock> lazy;
-
-        //public StockController()
-        //{
-        //    _stockService = new Lazy<StockService>(() =>
-        //    new StockService(Guid.Parse(User.Identity.GetUserId())));
-        //}
-
-        //public StockController(Lazy<StockService> stockService)
-        //{
-        //    _stockService = stockService;
-        //}
-
-        //public StockController(Lazy<IStock> lazy)
-        //{
-        //    this.lazy = lazy;
-        //}
-
-
         // GET: Stock
         public ActionResult Index()
         {
@@ -72,12 +51,9 @@ namespace StockThree.Web.Controllers
 
             if (_stockService.Value.CreateStock(model))
             {
-                //Using TempData to store data in the session.
-                //When you tead data from there, it removes it from the session.
                 TempData["SaveResult"] = "Your stock was created.";
                 return RedirectToAction("Index");
-            }
-            ;  //<<<---------------------------------*needs a semi-colon  #7 num 10.
+            }; 
             
             ModelState.AddModelError("","Stock could not be created.");
             
@@ -91,11 +67,9 @@ namespace StockThree.Web.Controllers
             return View(model);
         }
 
-        //Remember that lc id is important because of the route.
         public ActionResult Edit(int id)
         {
-  //          var service = CreateStockService();
-  //          var detail = _stockService.Value.GetStockById(id);
+
             var detail = _stockService.Value.GetStockById(id);
             
 
@@ -158,6 +132,6 @@ namespace StockThree.Web.Controllers
             var userId = Guid.Parse(User.Identity.GetUserId());
             var service = new StockService(userId);
             return service;
-        }// ******
+        }
     }
 }

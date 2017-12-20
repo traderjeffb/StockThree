@@ -14,15 +14,6 @@ namespace StockThree.Web.Tests.Controllers.StockControllerTests
     [TestClass]
     public class CreatePost : StockControllerTestsBase
     {
-        
-        //private ReviewCreate _model;
-
-        //private ActionResult Act()
-        //{
-        //    return Controller.Create(_model);
-        //}
-
-
 
         [TestMethod]
         public void ShouldReturnRedirectToResult()
